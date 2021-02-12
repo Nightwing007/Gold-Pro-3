@@ -1,0 +1,331 @@
+class Face
+{
+    constructor(x,y,scale)
+    {
+
+        this.x = x;
+        this.y = y;
+
+        this.image = createSprite(this.x,this.y);
+        this.image.scale =scale;
+
+        this.m1 = loadImage("Male/1.png");
+        this.m2 = loadImage("Male/2.png");
+        this.m3 = loadImage("Male/3.png");
+        this.m4 = loadImage("Male/4.png");
+        this.m5 = loadImage("Male/5.png");
+        this.m6 = loadImage("Male/6.png");
+        this.m7 = loadImage("Male/7.png");
+        this.m8 = loadImage("Male/8.png");
+        this.m9 = loadImage("Male/9.png");
+        this.m10 = loadImage("Male/10.png");
+        this.m11 = loadImage("Male/11.png");
+        this.m12 = loadImage("Male/12.png");
+        this.m13 = loadImage("Male/13.png");
+        this.m14 = loadImage("Male/14.png");
+        this.m15 = loadImage("Male/15.png");
+        this.m16 = loadImage("Male/16.png");
+        this.m17 = loadImage("Male/17.png");
+        this.m18 = loadImage("Male/18.png");
+        this.m19 = loadImage("Male/19.png");
+        this.m20 = loadImage("Male/20.png");
+        this.m21 = loadImage("Male/21.png");
+        this.m22 = loadImage("Male/22.png");
+        this.m23 = loadImage("Male/23.png");
+        this.m24 = loadImage("Male/24.png");
+        this.m25 = loadImage("Male/25.png");
+        this.m26 = loadImage("Male/26.png");
+        this.m27 = loadImage("Male/27.png");
+        this.m28 = loadImage("Male/28.png");
+        this.m29 = loadImage("Male/29.png");
+        this.m30 = loadImage("Male/30.png");
+        this.m31 = loadImage("Male/31.png");
+        this.m32 = loadImage("Male/32.png");
+        this.m33 = loadImage("Male/33.png");
+        this.m34 = loadImage("Male/34.png");
+        this.m35 = loadImage("Male/35.png");
+        this.m36 = loadImage("Male/36.png");
+        this.m37 = loadImage("Male/37.png");
+        this.m38 = loadImage("Male/38.png");
+        this.m39 = loadImage("Male/39.png");
+        this.m40 = loadImage("Male/40.png");
+        this.m41 = loadImage("Male/41.png");
+        this.m42 = loadImage("Male/42.png");
+        this.m43 = loadImage("Male/43.png");
+        this.m44 = loadImage("Male/44.png");
+        this.m45 = loadImage("Male/45.png");
+        this.m46 = loadImage("Male/46.png");
+        this.m47 = loadImage("Male/47.png");
+
+        this.f1 = loadImage("Female/1.png");
+        this.f2 = loadImage("Female/2.png");
+        this.f3 = loadImage("Female/3.png");
+        this.f4 = loadImage("Female/4.png");
+        this.f5 = loadImage("Female/5.png");
+        this.f6 = loadImage("Female/6.png");
+        this.f7 = loadImage("Female/7.png");
+        this.f8 = loadImage("Female/8.png");
+        this.f9 = loadImage("Female/9.png");
+        this.f10 = loadImage("Female/10.png");
+        this.f11 = loadImage("Female/11.png");
+        this.f12 = loadImage("Female/12.png");
+        this.f13 = loadImage("Female/13.png");
+        this.f14 = loadImage("Female/14.png");
+        this.f15 = loadImage("Female/15.png");
+        this.f16 = loadImage("Female/16.png");
+        this.f17 = loadImage("Female/17.png");
+        this.f18 = loadImage("Female/18.png");
+        this.f19 = loadImage("Female/19.png");
+        this.f20 = loadImage("Female/20.png");
+        this.f21 = loadImage("Female/3.png");
+        this.f22 = loadImage("Female/3.png");
+        this.f23 = loadImage("Female/5.png");
+        this.f24 = loadImage("Female/5.png");
+        this.f25 = loadImage("Female/8.png");
+        this.f26 = loadImage("Female/8.png");
+        this.f27 = loadImage("Female/12.png");
+        this.f28 = loadImage("Female/12.png");
+        this.f29 = loadImage("Female/13.png");
+        this.f30 = loadImage("Female/13.png");
+        this.f31 = loadImage("Female/17.png");
+        this.f32 = loadImage("Female/17.png");
+        this.f33 = loadImage("Female/20.png");
+        this.f34 = loadImage("Female/20.png");
+        this.f35 = loadImage("Female/3.png");
+        this.f36 = loadImage("Female/5.png");
+        this.f37 = loadImage("Female/8.png");
+        this.f38 = loadImage("Female/12.png");
+        this.f39 = loadImage("Female/13.png");
+        this.f40 = loadImage("Female/17.png");
+        this.f41 = loadImage("Female/20.png");
+        this.f42 = loadImage("Female/3.png");
+        this.f43 = loadImage("Female/5.png");
+        this.f44 = loadImage("Female/8.png");
+        this.f45 = loadImage("Female/12.png");
+        this.f46 = loadImage("Female/13.png");
+        this.f47 = loadImage("Female/17.png");
+        this.f48 = loadImage("Female/20.png");
+        this.f49 = loadImage("Female/3.png");
+        this.f50 = loadImage("Female/8.png");
+    }
+
+
+    face()
+    {
+        if(form.gender === "M"){
+                var rand1 = Math.round(random(1,47));
+                console.log("rand1" + rand1);
+                switch(rand1)
+                {
+
+                    case 1 : this.image.addImage(this.m1);
+                    break;
+                    case 2 : this.image.addImage(this.m2);
+                    break;
+                    case 3 : this.image.addImage(this.m3);
+                    break;
+                    case 4 : this.image.addImage(this.m4);
+                    break;
+                    case 5 : this.image.addImage(this.m5);
+                    break;
+                    case 6 : this.image.addImage(this.m6);
+                    break;
+                    case 7 : this.image.addImage(this.m7);
+                    break;
+                    case 8 : this.image.addImage(this.m8);
+                    break;
+                    case 9 : this.image.addImage(this.m9);
+                    break;
+                    case 10 : this.image.addImage(this.m10);
+                    break;
+                    case 11 : this.image.addImage(this.m11);
+                    break;
+                    case 12 : this.image.addImage(this.m12);
+                    break;
+                    case 13 : this.image.addImage(this.m13);
+                    break;
+                    case 14 : this.image.addImage(this.m14);
+                    break;
+                    case 15 : this.image.addImage(this.m15);
+                    break;
+                    case 16 : this.image.addImage(this.m16);
+                    break;
+                    case 17 : this.image.addImage(this.m17);
+                    break;
+                    case 18 : this.image.addImage(this.m18);
+                    break;
+                    case 19 : this.image.addImage(this.m19);
+                    break;
+                    case 20 : this.image.addImage(this.m20);
+                    break;
+                    case 21 : this.image.addImage(this.m21);
+                    break;
+                    case 22 : this.image.addImage(this.m22);
+                    break;
+                    case 23 : this.image.addImage(this.m23);
+                    break;
+                    case 24 : this.image.addImage(this.m24);
+                    break;
+                    case 25 : this.image.addImage(this.m25);
+                    break;
+                    case 26 : this.image.addImage(this.m26);
+                    break;
+                    case 27 : this.image.addImage(this.m27);
+                    break;
+                    case 28 : this.image.addImage(this.m28);
+                    break;
+                    case 29 : this.image.addImage(this.m29);
+                    break;
+                    case 30 : this.image.addImage(this.m30);
+                    break;
+                    case 31 : this.image.addImage(this.m31);
+                    break;
+                    case 32 : this.image.addImage(this.m32);
+                    break;
+                    case 33 : this.image.addImage(this.m33);
+                    break;
+                    case 34 : this.image.addImage(this.m34);
+                    break;
+                    case 35 : this.image.addImage(this.m35);
+                    break;
+                    case 36 : this.image.addImage(this.m36);
+                    break;
+                    case 37 : this.image.addImage(this.m37);
+                    break;
+                    case 38 : this.image.addImage(this.m38);
+                    break;
+                    case 39 : this.image.addImage(this.m39);
+                    break;
+                    case 40 : this.image.addImage(this.m40);
+                    break;
+                    case 41 : this.image.addImage(this.m41);
+                    break;
+                    case 42 : this.image.addImage(this.m42);
+                    break;
+                    case 43 : this.image.addImage(this.m43);
+                    break;
+                    case 44 : this.image.addImage(this.m44);
+                    break;
+                    case 45 : this.image.addImage(this.m45);
+                    break;
+                    case 46 : this.image.addImage(this.m46);
+                    break;
+                    case 47 : this.image.addImage(this.m47);
+                    break;
+                }
+        }
+       else
+        {
+            var rand2 = Math.round(random(1,50));
+            console.log("rand2" + rand2);
+            switch(rand2)
+                {
+                    case 1 : this.image.addImage(this.f1);
+                    break;
+                    case 2 : this.image.addImage(this.f2);
+                    break;
+                    case 3 : this.image.addImage(this.f3);
+                    break;
+                    case 4 : this.image.addImage(this.f4);
+                    break;
+                    case 5 : this.image.addImage(this.f5);
+                    break;
+                    case 6 : this.image.addImage(this.f6);
+                    break;
+                    case 7 : this.image.addImage(this.f7);
+                    break;
+                    case 8 : this.image.addImage(this.f8);
+                    break;
+                    case 9 : this.image.addImage(this.f9);
+                    break;
+                    case 10 : this.image.addImage(this.f10);
+                    break;
+                    case 11 : this.image.addImage(this.f11);
+                    break;
+                    case 12 : this.image.addImage(this.f12);
+                    break;
+                    case 13 : this.image.addImage(this.f13);
+                    break;
+                    case 14 : this.image.addImage(this.f14);
+                    break;
+                    case 15 : this.image.addImage(this.f15);
+                    break;
+                    case 16 : this.image.addImage(this.f16);
+                    break;
+                    case 17 : this.image.addImage(this.f17);
+                    break;
+                    case 18 : this.image.addImage(this.f18);
+                    break;
+                    case 19 : this.image.addImage(this.f19);
+                    break;
+                    case 20 : this.image.addImage(this.f20);
+                    break;
+                    case 21 : this.image.addImage(this.f21);
+                    break;
+                    case 22 : this.image.addImage(this.f22);
+                    break;
+                    case 23 : this.image.addImage(this.f23);
+                    break;
+                    case 24 : this.image.addImage(this.f24);
+                    break;
+                    case 25 : this.image.addImage(this.f25);
+                    break;
+                    case 26 : this.image.addImage(this.f26);
+                    break;
+                    case 27 : this.image.addImage(this.f27);
+                    break;
+                    case 28 : this.image.addImage(this.f28);
+                    break;
+                    case 29 : this.image.addImage(this.f29);
+                    break;
+                    case 30 : this.image.addImage(this.f30);
+                    break;
+                    case 31 : this.image.addImage(this.f31);
+                    break;
+                    case 32 : this.image.addImage(this.f32);
+                    break;
+                    case 33 : this.image.addImage(this.f33);
+                    break;
+                    case 34 : this.image.addImage(this.f34);
+                    break;
+                    case 35 : this.image.addImage(this.f35);
+                    break;
+                    case 36 : this.image.addImage(this.f36);
+                    break;
+                    case 37 : this.image.addImage(this.f37);
+                    break;
+                    case 38 : this.image.addImage(this.f38);
+                    break;
+                    case 39 : this.image.addImage(this.f39);
+                    break;
+                    case 40 : this.image.addImage(this.f40);
+                    break;
+                    case 41 : this.image.addImage(this.f41);
+                    break;
+                    case 42 : this.image.addImage(this.f42);
+                    break;
+                    case 43 : this.image.addImage(this.f43);
+                    break;
+                    case 44 : this.image.addImage(this.f44);
+                    break;
+                    case 45 : this.image.addImage(this.f45);
+                    break;
+                    case 46 : this.image.addImage(this.f46);
+                    break;
+                    case 47 : this.image.addImage(this.f47);
+                    break;
+                    case 48 : this.image.addImage(this.f48);
+                    break;
+                    case 49 : this.image.addImage(this.f49);
+                    break;
+                    case 50 : this.image.addImage(this.f50);
+                    break;
+                }
+        }
+    }
+
+
+    display()
+    {
+    }
+}
